@@ -2,6 +2,10 @@
     background-color: #034370;
 }
 
+.center{
+  text-align: center;
+}
+
 .headertext{
     background-color: #034370;
     border: none;
@@ -27,6 +31,12 @@
     margin-left: 15px;
 }
 
+.comparison_container_inset{
+  background-color: white;
+  padding: 30px;
+  margin-left: 15px;
+}
+
 #home_image_main{
     float: left;
     width: 400px;
@@ -37,6 +47,24 @@
     float: left;
     width: 160px;
     height: 110px;
+}
+
+#visual_image_main{
+  float: left;
+  width: 750px;
+  height: 500px;
+}
+
+.comparison_image_main{
+  float: left;
+  width: 500px;
+  height: 325px;
+}
+
+#home_image_small{
+  float: left;
+  width: 160px;
+  height: 110px;
 }
 
 @media (min-width: 992px) {
@@ -109,7 +137,7 @@ figure.photo * {
 figure.photo img {
   max-width: 100%;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 figure.photo figcaption {
@@ -139,7 +167,6 @@ figure.photo:before {
   width: 100%;
   top: 0;
   left: 0;
-  content: '';
   background: #ffffff;
   position: absolute;
   -webkit-transition: all 0.3s ease-in-out;
@@ -206,4 +233,13 @@ figure.photo:hover:before,
 figure.photo.hover:before {
   -webkit-transform: rotate(110deg) translateY(-150%);
   transform: rotate(110deg) translateY(-150%);
+}
+
+
+.row-striped:nth-of-type(odd){
+  background-color: #efefef;
+}
+
+.row-striped:nth-of-type(even){
+  background-color: #ffffff;
 }
