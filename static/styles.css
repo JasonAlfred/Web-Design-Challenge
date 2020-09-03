@@ -50,9 +50,8 @@
 }
 
 #visual_image_main{
-  float: left;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 500px;
 }
 
 .comparison_image_main{
